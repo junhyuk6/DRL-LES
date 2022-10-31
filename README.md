@@ -1,4 +1,6 @@
 ## Deep reinforcement learning for large-eddy simulation modeling in wall-bounded turbulence
 #### by Junhyuk Kim, Hyojin Kim, Jiyeon Kim & Changhoon Lee
 
-Our code will be shared in October 2022.
+I'm sorry that our code will be uploaded in November 2022 due to an accident in the server room.
+
+If you have any questions about the article and the code, please email junhyuk6@yonsei.ac.kr.
