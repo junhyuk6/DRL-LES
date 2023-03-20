@@ -529,7 +529,7 @@ def time_loop(up_gpu,vp_gpu,SGS2p_gpu,SGSv2p_gpu,H2p_gpu,Hv2p_gpu,t_s,t_e, EQWM=
         CFL_gpu = cp.amax(cp.abs(u_gpu[:,1:nyp,:,:,0:1])*dt_gpu/dx+
                           cp.abs((0.5*v_gpu[:,0:nyp-1]+0.5*v_gpu[:,1:nyp]))*dt_gpu/dy_gpu[:,1:nyp]+
                           cp.abs(u_gpu[:,1:nyp,:,:,1:2])*dt_gpu/dz, axis=(1,2,3,4), keepdims=True)
-        dt_gpu[:] = dt_gpu[:]*0.15/CFL_gpu
+        dt_gpu[:] = dt_gpu[:]*0.20/CFL_gpu
 
         dt = cp.asnumpy(dt_gpu); CFL = cp.asnumpy(CFL_gpu);
 
